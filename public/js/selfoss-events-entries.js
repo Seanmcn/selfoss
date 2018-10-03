@@ -220,7 +220,7 @@ selfoss.events.entries = function() {
             error: function(jqXHR, textStatus, errorThrown) {
                 content.html(articleList);
                 $('#content').removeClass('loading');
-                alert($('#lang').data('refresh_error') + errorThrown);
+                alert($('#lang').data('refresh_error') + ': ' + errorThrown);
             }
         });
     });
