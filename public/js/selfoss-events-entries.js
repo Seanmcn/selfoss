@@ -169,7 +169,7 @@ selfoss.events.entries = function() {
             },
             error: function(jqXHR, textStatus, errorThrown) {
                 streamMore.removeClass('loading');
-                selfoss.ui.showError($('#lang').data('loading_error') + ': ' +
+                selfoss.ui.showError($('#lang').data('error_loading') + ': ' +
                                      textStatus + ' ' + errorThrown);
             }
         });
@@ -220,7 +220,7 @@ selfoss.events.entries = function() {
             error: function(jqXHR, textStatus, errorThrown) {
                 content.html(articleList);
                 $('#content').removeClass('loading');
-                alert($('#lang').data('refresh_error') + ': ' + errorThrown);
+                alert($('#lang').data('error_refreshing_source') + ': ' + errorThrown);
             }
         });
     });
