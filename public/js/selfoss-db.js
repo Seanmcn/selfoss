@@ -72,7 +72,7 @@ selfoss.dbOnline = {
                 selfoss.lastUpdate = dataDate;
             },
             error: function(jqXHR, textStatus, errorThrown) {
-                selfoss.ui.showError($('#lang').data('error_sync') + ': ' +
+                selfoss.ui.showError($('#lang').data('error_sync') + ' ' +
                                      textStatus + ' ' + errorThrown);
             }
         });
@@ -140,7 +140,7 @@ selfoss.dbOnline = {
                     selfoss.ui.showError($('#lang').data('error_session_expired'));
                     selfoss.logout();
                 } else if (errorThrown) {
-                    selfoss.ui.showError($('#lang').data('error_loading') + ': ' +
+                    selfoss.ui.showError($('#lang').data('error_loading') + ' ' +
                                          textStatus + ' ' + errorThrown);
                 }
                 selfoss.events.entries();
