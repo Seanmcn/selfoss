@@ -174,7 +174,7 @@ selfoss.events = {
                         selfoss.filter.sourcesNav = true;
                     }
                 } else if (selfoss.events.subsection != 'all') {
-                    selfoss.ui.showError(F + ': '
+                    selfoss.ui.showError($('#lang').data('error_invalid_subsection') + ' '
                                          + selfoss.events.subsection);
                     done();
                     return;
